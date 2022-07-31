@@ -521,13 +521,7 @@
         .pull-left-24--reset {
             animation: pull-left-24--reset 1s linear;
             animation-fill-mode: forwards;
-            margin-left: -35px !important;
         }
-
-        .skip-portrait {
-            margin-left: 0px !important;
-        }
-
 
         .pl-64 {
             padding-left: 0px;
