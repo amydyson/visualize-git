@@ -161,7 +161,7 @@ export class ResetComponent implements OnInit {
     this.completed = true;
     setTimeout(() => {
       this.showReset = true;
-    }, 3000)
+    }, 2000)
   }
 
   selectCommand(command){
