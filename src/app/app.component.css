@@ -204,6 +204,9 @@
 .pl-64 {
     padding-left: 64px;
 }
+.pl-64--reset {
+    padding-left: 64px;
+}
 .pl-92 {
     padding-left: 92px;
 }
@@ -356,7 +359,9 @@
 .w-350 {
     width: 350px;
 }
-
+.w-350--reset {
+    width: 350px;
+}
 
 .w-450 {
     width: 450px;
@@ -508,8 +513,16 @@
             flex-direction: column;
         }
 
+        .pl-64 {
+            padding-left: 0px;
+        }
+
+        .w-350--reset {
+            width: 100%;
+        }
+
         .min-w-150--reset {
-            min-width: 60px;
+            min-width: 50px;
         }
         .w-40--reset {
             width: 40%;

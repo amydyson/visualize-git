@@ -1,6 +1,6 @@
 <section class= "flex direction-column align-center">
   <div class="h-48">
-   <span [ngClass]="{'hide': !hideMessage, 'show': hideMessage}">git reset optionally moves the HEAD in the Repository and optionally overwrites the Index and Working Area</span>
+   <span class="blue font-change-14-16 pl-16 pr-16 text-center" [ngClass]="{'hide': !hideMessage, 'show': hideMessage}">git reset optionally moves the HEAD in the Repository and optionally overwrites the Index and Working Area</span>
   <div class="flex direction-column">
     <span [ngClass]="{'hide': hideMessage || headPointer() !== 'head1' }">Points to commit one place before HEAD</span>
     <span [ngClass]="{'hide': hideMessage || headPointer() !== 'head' }">Points to HEAD (default)</span>
@@ -11,7 +11,7 @@
     <span [ngClass]="{'hide': hideMessage || overwriteType() !== 'hard' }">Hard: overwrite Index and Working Area</span>
   </div>
   </div>
-  <div class="flex">
+  <div class="flex align-center justify-center">
     <mat-form-field class="w-40" appearance="fill">
       <mat-label float="never">Choose where to move HEAD</mat-label>
       <mat-select [disabled]="completed" (selectionChange)="selectCommit($event.value)">
@@ -29,19 +29,19 @@
     </mat-form-field>
   </div>
   <div class="flex">
-    <button [disabled]="completed" (click)="visualizeReset()" class="w-350" mat-raised-button color="warn">Visualize "git reset<span *ngIf="chosenCommit !=='no parameter'"> {{chosenCommit}}</span><span *ngIf="chosenCommand !=='no parameter' && chosenCommand !==''"> --{{chosenCommand}}</span>"</button>
+    <button [disabled]="completed" (click)="visualizeReset()" class="w-350--reset" mat-raised-button color="warn">Visualize "git reset<span *ngIf="chosenCommit !=='no parameter'"> {{chosenCommit}}</span><span *ngIf="chosenCommand !=='no parameter' && chosenCommand !==''"> --{{chosenCommand}}</span>"</button>
     <div class="pr-8"></div>
     <button mat-fab [disabled]="!showReset" (click)="reset()" mat-raised-button color="warn"><span>Reset</span></button>
   </div>
-  <div class="flex pt-32 change-direction">
-    <div class="order-switch-2 flex  direction-column height-change bt-beige bb-beige bl-beige br-beige text-align">
+  <div class="flex pt-32 change-directionx">
+    <div class="order-switch-2x flex  direction-column height-change bt-beige bb-beige bl-beige br-beige text-align">
       <div class="w-full min-w-150--reset background-black white">Working Area</div>
       <div class="flex align-center justify-center pt-8 mt-4 pb-32">
         <div class="dot gold"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
     </div>
-    <div class="order-1 height-change bt-beige bl-change bb-beige br-beige text-align">
+    <div class="order-1x height-change bt-beige bl-change bb-beige br-beige text-align">
       <div class="w-full min-w-150--reset background-black white">Index</div>
       <div class="flex align-center justify-center pt-8 mt-4 pb-32">
         <div class="dot gold"></div>
@@ -54,7 +54,7 @@
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
     </div>
-    <div class="order-switch-0 height-change bt-beige bl-change bb-beige br-beige text-align">
+    <div class="order-switch-0x height-change bt-beige bl-change bb-beige br-beige text-align">
       <div class="w-full min-w-250--reset background-black white">Repository</div>
       <div class="flex align-center pt-8 pb-8 pr-8">
         <div class="toMove pl-20 pr-8">HEAD</div>
@@ -63,17 +63,17 @@
         <div class="dot seaGreen " [ngClass]="{'pull-left-24': copyHead()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
-      <div class="flex align-center justify-center ml-switch--reset pl-64 pb-8 pr-8">
+      <div class="flex align-center justify-center ml-switch--reset pl-64--reset pb-8 pr-8">
         <div class="head1 dot indianRed" [ngClass]="{'hide': !copyHead1(), 'show overwrite-index1': copyHead1()}"></div>
         <div class="dot indianRed " [ngClass]="{'pull-left-24': copyHead1()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
-      <div class="flex align-center justify-center ml-switch--reset pt-8 pl-64 pb-8 pr-8">
+      <div class="flex align-center justify-center ml-switch--reset pt-8 pl-64--reset pb-8 pr-8">
         <div class="head2 dot mediumPurple" [ngClass]="{'hide': !copyHead2(), 'show overwrite-index2': copyHead2()}"></div>
         <div class="dot mediumPurple " [ngClass]="{'pull-left-24': copyHead2()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
-      <div class="flex align-center justify-center ml-switch--reset  pt-8 pl-64 pb-8 pr-8">
+      <div class="flex align-center justify-center ml-switch--reset  pt-8 pl-64--reset pb-8 pr-8">
         <div class="head3 dot background-gray" [ngClass]="{'hide': !copyHead3(), 'show overwrite-index3': copyHead3()}"></div>
         <div class="dot background-gray " [ngClass]="{'pull-left-24': copyHead3()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
