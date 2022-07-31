@@ -521,11 +521,13 @@
         .pull-left-24--reset {
             animation: pull-left-24--reset 1s linear;
             animation-fill-mode: forwards;
-        }
-
-        .pull-portrait-only {
             margin-left: -35px !important;
         }
+
+        .skip-portrait {
+            margin-left: 0px !important;
+        }
+
 
         .pl-64 {
             padding-left: 0px;
@@ -595,6 +597,9 @@
                 
         @keyframes pull-left-24--reset {
             0% {
+                opacity: 0;
+            }
+            70% {
                 opacity: 0;
             }
             100% {
@@ -1428,7 +1433,6 @@
             }
             100% {
                 transform: translate(-146px, -1px);
-                border: 5px solid black;
             }
         } 
         @keyframes overwrite-index1 {
@@ -1440,7 +1444,6 @@
             }
             100% {
                 transform: translate(-156px, -40px);
-                border: 5px solid orange;
             }
         } 
         @keyframes overwrite-index2 {
