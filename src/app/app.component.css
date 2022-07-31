@@ -1437,7 +1437,7 @@
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(-156px, -40px);
+                transform: translate(-150px, -40px);
             }
         } 
         @keyframes overwrite-index2 {
@@ -1448,8 +1448,7 @@
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(-137px, -83px);
-                border: 5px solid hotpink;
+                transform: translate(-147px, -83px);
             }
         } 
         @keyframes overwrite-index3 {
@@ -1460,8 +1459,7 @@
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(-137px, -123px);
-                border: 5px solid purple;
+                transform: translate(-147px, -123px);
             }
         } 
 
