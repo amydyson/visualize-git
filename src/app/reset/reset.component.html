@@ -46,7 +46,7 @@
       <div class="flex align-center justify-center pt-8 mt-4 pb-32">
         <div class="dot gold"></div>
         <div class="" 
-        [ngClass]="{'hide': !hardOverwrite() , 'dot pull-left-24 show' : !hideMessage, 
+        [ngClass]="{'hide': !hardOverwrite() , 'dot pull-left-24--reset show' : !hideMessage, 
         'headColorGreen': (chosenCommand === 'hard' && headPointer() === 'head'),
         'headColorRed': (chosenCommand === 'hard' && headPointer() === 'head1'),
         'headColorPurple': (chosenCommand === 'hard' && headPointer() === 'head2'),
@@ -60,22 +60,22 @@
         <div class="toMove pl-20 pr-8">HEAD</div>
         <div class="toMove toMove--arrow font-size-32 pr-8">&#10132;</div> <!--arrow right-->
         <div class="head dot seaGreen" [ngClass]="{'hide': !copyHead(), 'show overwrite-index': copyHead()}"></div>
-        <div class="dot seaGreen " [ngClass]="{'pull-left-24': copyHead()}"></div>
+        <div class="dot seaGreen " [ngClass]="{'pull-left-24--reset pull-portrait-only': copyHead()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
       <div class="flex align-center justify-center ml-switch--reset pl-64--reset pb-8 pr-8">
         <div class="head1 dot indianRed" [ngClass]="{'hide': !copyHead1(), 'show overwrite-index1': copyHead1()}"></div>
-        <div class="dot indianRed " [ngClass]="{'pull-left-24': copyHead1()}"></div>
+        <div class="dot indianRed " [ngClass]="{'pull-left-24--reset': copyHead1()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
       <div class="flex align-center justify-center ml-switch--reset pt-8 pl-64--reset pb-8 pr-8">
         <div class="head2 dot mediumPurple" [ngClass]="{'hide': !copyHead2(), 'show overwrite-index2': copyHead2()}"></div>
-        <div class="dot mediumPurple " [ngClass]="{'pull-left-24': copyHead2()}"></div>
+        <div class="dot mediumPurple " [ngClass]="{'pull-left-24--reset': copyHead2()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
       <div class="flex align-center justify-center ml-switch--reset  pt-8 pl-64--reset pb-8 pr-8">
         <div class="head3 dot background-gray" [ngClass]="{'hide': !copyHead3(), 'show overwrite-index3': copyHead3()}"></div>
-        <div class="dot background-gray " [ngClass]="{'pull-left-24': copyHead3()}"></div>
+        <div class="dot background-gray " [ngClass]="{'pull-left-24--reset': copyHead3()}"></div>
         <div class="pl-8 pr-8 hide-in-portrait">index.html</div>
       </div>
     </div>

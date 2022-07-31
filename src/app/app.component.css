@@ -443,6 +443,10 @@
     margin-left: -24px !important;
 }
 
+.pull-left-24--reset{
+    margin-left: -24px !important;
+}
+
 .moveAndColor {
     animation: moveAndColor 1s linear;
     animation-fill-mode: forwards;
@@ -513,6 +517,16 @@
             flex-direction: column;
         }
 
+
+        .pull-left-24--reset {
+            animation: pull-left-24--reset 1s linear;
+            animation-fill-mode: forwards;
+        }
+
+        .pull-portrait-only {
+            margin-left: -35px !important;
+        }
+
         .pl-64 {
             padding-left: 0px;
         }
@@ -578,7 +592,16 @@
         .pull-up-image{
             margin-top: -60px;
         }
-        
+                
+        @keyframes pull-left-24--reset {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        } 
+
         @keyframes moveAndColor {
             0% {
                 transform: translateY(0);
@@ -1354,6 +1377,21 @@
             height: 50px;
         }
 
+        @keyframes moveToWorkingArea {
+            0% {
+                opacity: 0;
+                transform: translateX(0);
+            }
+            70% {
+                opacity: 0.3;
+                transform: translateX(0px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(-75px);
+            }
+        } 
+
         @keyframes move-down-one {
             0% {
                 transform: translateY(0);
@@ -1381,13 +1419,16 @@
         } 
         @keyframes overwrite-index {
             0% {
+                opacity: 0;
                 transform: translate(0, 0);
             }
-            50% {
+            70% {
+                opacity: 1;
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(-237px, -3px);
+                transform: translate(-146px, -1px);
+                border: 5px solid black;
             }
         } 
         @keyframes overwrite-index1 {
@@ -1398,7 +1439,8 @@
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(-237px, -40px);
+                transform: translate(-156px, -40px);
+                border: 5px solid orange;
             }
         } 
         @keyframes overwrite-index2 {
@@ -1409,7 +1451,8 @@
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(-237px, -83px);
+                transform: translate(-137px, -83px);
+                border: 5px solid hotpink;
             }
         } 
         @keyframes overwrite-index3 {
@@ -1420,7 +1463,8 @@
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(-237px, -123px);
+                transform: translate(-137px, -123px);
+                border: 5px solid purple;
             }
         } 
 
